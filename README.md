@@ -1,14 +1,15 @@
 # CPP程序设计作业
-Tairokiya 完成chenzuolin作业进度条
 
----
-**THE FIRST ASSIGNMENT
-**
 
-   (1) **Complex**  
+
+
+
+#### THE FIRST ASSIGNMENT
+
+   #####(1) **Complex**  
    Write a class named `Complex`, representing a complex number such as `1+3.4i` . You must define two member variables `real` and `image`, and define four member functions:
 
-```
+```C++
 void setValue(double r,double i);  
 void addValue(double r,double i); // a=a+b
 void multiply(double r,double i); // a=a*b
@@ -16,10 +17,10 @@ void displayMessage();
 ```
    Create some objects inside main(), and call all of the four functions to check you implementation.
 
-   (2) **Triangle**  
+   #####(2) **Triangle**  
    Define a class `Triangle` like this:
 
-```
+```C++
 
    class Triangle{
        double a,b,c;
@@ -35,16 +36,20 @@ Put the class definition in a header file( such as `Triangle.h`), and implement 
 
    Hint: a Traingle object with larger area will be regarded as "larger object".
 
-   Completed assignment should be submitted to zuolinchen@126.com no later than the end of this week.
+
+
+
+
+
 
 ---
 
-**THE SECOND ASSIGNMENT**  
-(1) Write a function `void displayInBinary(void *data,int len) `what will display the binary sequence of a given variable. For example, `char c='a', displayInBinary(&c,sizeof(c))` will output`0110 0001`, and `short n=257,displayInBinary(&n,sizeof(n)) ` will output `0000 0001 0000 0001` , and `float f=1.0f, displayInBinary(&f,sizeof(f))`  will output `0011 1111 1000 0000 0000 0000 0000 0000`.
+####THE SECOND ASSIGNMENT  
+**(1)** Write a function `void displayInBinary(void *data,int len) `what will display the binary sequence of a given variable. For example, `char c='a', displayInBinary(&c,sizeof(c))` will output`0110 0001`, and `short n=257,displayInBinary(&n,sizeof(n)) ` will output `0000 0001 0000 0001` , and `float f=1.0f, displayInBinary(&f,sizeof(f))`  will output `0011 1111 1000 0000 0000 0000 0000 0000`.
 
    Now, please investigate the following function:
 
-```
+```C++
 void binaryOut(char c){    
 	unsigned char tmp=0x80;
    for(int i=0;i<8;i++){
@@ -58,9 +63,9 @@ void binaryOut(char c){
 ```
     You can implement displayInBinary() by employing binaryOut().
 
-(2) Virtual function is a important concept that will be involed in final examination. Investigate the following program, then answer some questions:
+**(2)** Virtual function is a important concept that will be involed in final examination. Investigate the following program, then answer some questions:
 
-```
+```C++
  #include using namespace std;
 class shape{
  public:
@@ -105,7 +110,20 @@ int main(int argc, char *argv[]){
 
     3.Outline the usage of virtual function in your words.
 
-**THE THIRD ASSIGNMENT**  
+
+
+
+
+
+
+
+
+
+
+
+---
+
+#### THE THIRD ASSIGNMENT 
 
 (1) Write a function whose prototype is:
 
@@ -114,7 +132,7 @@ int main(int argc, char *argv[]){
 
 (2)Define a class Calculator like this:
 
-```
+```C++
    class Calculator{
 
        double operand1,operand2;
@@ -141,28 +159,28 @@ int main(int argc, char *argv[]){
 
            return 1;
        }
-
+    
        double op1,op2;
-
+    
        char *opcode;
-
+    
        op1=...
-
+    
        op2=...
-
+    
        opcode=...
-
+    
        Calculator one(op1,op2,opcode);
-
+    
        cout << one.doOperation() << endl;
-
+    
        return 0;
    }
 
    If we input "calculator div 1.1 2.2" in command line, we will see the result 0.5.
 
 (3)Inspect this program：
-``` 
+``` C++
  #include < iostream >
 using std::cout;
 using std::cin;
@@ -180,7 +198,7 @@ int main( ){
    Please input the data from a file instead of from keyboard，and save the result into a file. You can use classifstream and ofstream，and judge the end of a file by calling feof()。
 
 （4）Inspect the fragment：
-```
+```C++
    for(i=0;i<100;i++)
        for(j=0;j<100;j++)
            for(k=0;k<100;k++)
@@ -189,7 +207,13 @@ int main( ){
 ```
    Please fulfill the program using break. You can use the statement goto also. What is the defference between them?
 
-**THE FOURTH ASSIGNMENT**  
+
+
+
+
+----
+
+#### THE FOURTH ASSIGNMENT  
 
 (1)Write a **function template** whose prototype is:
 `template int find(T val,T *list,int size);
@@ -197,10 +221,17 @@ int main( ){
 
 (2)Define a **class template** that employes more than one template parameters, and create some objects to test it.
 
-**THE FIFTH ASSIGNMENT**    
+
+
+
+
+----
+
+#### THE FIFTH ASSIGNMENT    
+
 (1)Study this program, then answer questions:   
 
-``` 
+``` C++
  #include < iostream >
 using std::cout;
 using std::endl;
@@ -311,7 +342,7 @@ int main(){
 (2)Suppose we have a variable:
 `double **Matrix;`  
 Write two functions:
-```
+```C++
 double **allocMatrix(int n);    
 void releaseMatrix(double **m);
 ```
