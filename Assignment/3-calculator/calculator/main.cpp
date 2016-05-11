@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <unistd.h>
 #include "Calculator.hpp"
 using namespace std;
 

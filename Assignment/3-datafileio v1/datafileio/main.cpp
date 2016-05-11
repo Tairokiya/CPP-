@@ -7,39 +7,39 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include <unistd.h>
-using std::cout;
-using std::cin;
-using std::endl;
+#include <sys/stat.h>
+using namespace std;
+
+inline void leapyear(int64_t year, ofstream & output){
+    if ((year%4==0 && year%100!=0) || year%400==0){
+        output << year << " is a leap year." << endl;
+    }else{
+        output << year << " is not a leap year." << endl;
+    }
+}
+
+inline int64_t getNextNumber(ifstream &input){
+    char ch = 0; char year[100] = {0};
+    int i = 0;
+    while ( input.get(ch) && isnumber(ch)) {
+            year[i] = ch; i++;
+    }
+    year[i] = 0;
+    return atoll(year);
+}
+
 
 int main(){
+    
     system("pwd");
-    int year = NULL;
-    FILE *f = fopen("./2014.txt", "r");
-    FILE *r = fopen("result.txt", "w+");
-    char buf[100] = {'0'};
-    fread(buf, 100, 100, f);
-    year = atoi(buf);
+    ifstream input; input.open("./input.in");
+    ofstream output; output.open("./output.txt");
     
-    if  ( (year%4==0 && year%100!=0) || year%400==0){
-        cout<<year<<" is a leap year"<<endl;
-        sprintf(buf, "%d is a leap year\n",year);
-        fwrite(buf, 100, 100, r);
-        
-    }
-    else{
-        cout<< year<<" is not a leap year"<<endl;
-        sprintf(buf, "%d is not a leap year\n",year);
-        fwrite(buf, strlen(buf), strlen(buf), r);
+    while (!input.std::__1::ios_base::eof()) {
+        leapyear(getNextNumber(input), output);
     }
     
-#if DEBUG
-    fseek(r, 0, 0);
-    fread(buf, 100, 100, r);
-    cout << buf << endl;
-#endif
-    
-    fclose(f);
-    fclose(r);
     return 0;
 }

@@ -36,6 +36,8 @@ public:
     
 };
 
+//constexpr C++11中可以支持虚数的识别
+//  Complex a = 3+4i ;
 //constexpr Complex::Complex operator"" i(double img) {
 //    return Complex(0.0,img);
 //}
