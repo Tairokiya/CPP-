@@ -1,4 +1,0 @@
-2014 is not a leap year.
-2015 is not a leap year.
-20202020 is a leap year.
-300 is not a leap year.
