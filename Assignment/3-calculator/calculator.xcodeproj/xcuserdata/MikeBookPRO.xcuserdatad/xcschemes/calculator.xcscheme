@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "div 1.1 2.2"
+            argument = "div 1.1 0"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

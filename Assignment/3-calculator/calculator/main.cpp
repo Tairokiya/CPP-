@@ -28,6 +28,7 @@ int main(int argc, const char* argv[]){
     op2 = atof(argv[3]);
     
     Calculator one(op1,op2,opcode);
-    cout << one.doOperation() << endl;
+    std::cout << one.doOperation() << std::endl;
+    //另一种合理的设置方式是将错误处理放在main函数里，doOperation返回错误代码.但是在这个代码里面就显得不太可能。
     return  0;
 }

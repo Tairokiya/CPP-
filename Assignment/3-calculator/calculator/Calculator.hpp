@@ -14,13 +14,12 @@
 class Calculator{
     
     double operand1,operand2;
-    
+    double doOperationHidden(int &error);
     char operation[3] = {0};
     
 public:
     
     Calculator(double,double,char*);
-    
     double doOperation();
 };
 

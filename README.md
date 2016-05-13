@@ -150,32 +150,27 @@ int main(int argc, char *argv[]){
    You must put the class definition in a header file( such as Calculator.h), and implement it in a source-code file( such as Calculator.cpp), and use it to create an object, execute the member function doOperation(), and then display the result in main().
 
    Hint: the function main() will look like this:
+```
+int main(int argc,char *argv[]){
 
-   int main(int argc,char *argv[]){
-
-       if(argc!=4){
-
-           cout << "You must give 4 arguments!" << endl;
-
-           return 1;
-       }
-    
-       double op1,op2;
-    
-       char *opcode;
-    
-       op1=...
-    
-       op2=...
-    
-       opcode=...
-    
-       Calculator one(op1,op2,opcode);
-    
-       cout << one.doOperation() << endl;
-    
-       return 0;
+	if(argc!=4){
+       cout << "You must give 4 arguments!" << endl;
+       return 1;
    }
+
+   double op1,op2;
+   char *opcode;
+
+   op1=...
+   op2=...
+   opcode=...
+
+   Calculator one(op1,op2,opcode);
+   cout << one.doOperation() << endl;
+
+   return 0;
+}
+```
 
    If we input "calculator div 1.1 2.2" in command line, we will see the result 0.5.
 
@@ -216,8 +211,11 @@ int main( ){
 #### THE FOURTH ASSIGNMENT  
 
 (1)Write a **function template** whose prototype is:
-`template int find(T val,T *list,int size);
-`This function template is used to find a particular value val in an array list whose size is size. When cuccessful, it returns the subscript i where list[i]==val, otherwise returns -1.  
+```
+template<T> 
+int find(T val,T *list,int size);
+```
+This function template is used to find a particular value val in an array list whose size is size. When cuccessful, it returns the subscript i where `list[i]==val` , otherwise returns `-1`.  
 
 (2)Define a **class template** that employes more than one template parameters, and create some objects to test it.
 
@@ -346,4 +344,4 @@ Write two functions:
 double **allocMatrix(int n);    
 void releaseMatrix(double **m);
 ```
-Function `allocMatrix(n) ` will allocate memory space from heap to store a matrix with the scale n*n, while `functionreleaseMatrix(m)` will return the memory space used by m to heap.
+Function `allocMatrix(n) ` will allocate memory space from heap to store a matrix with the scale n*n, while function `releaseMatrix(m)` will return the memory space used by m to heap.
