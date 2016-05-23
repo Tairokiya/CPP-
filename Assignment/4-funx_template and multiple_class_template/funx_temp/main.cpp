@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  funx_temp
+//  funx_template and multiple_class_template
 //
 //  Created by Mike on 16/5/12.
 //  Copyright © 2016年 陈俊达. All rights reserved.

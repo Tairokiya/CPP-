@@ -1,0 +1,35 @@
+# C++作业说明
+
+作业是用Xcode完成，故工程文件为*.xcodeproj.
+
+### Assignment 1
+
+1-Complex
+
+1-Triangle
+
+### Assignment 2
+
+2-displayInBinary
+
+2-virtualFunction
+
+### Assignment 3
+
+3-calculator
+
+3-datafileio
+
+3-for_loop
+
+3-max
+
+### Assignment 4
+
+4-funx_template and multiple_class_template
+
+### Assignment 5
+
+5-Matrix
+
+5-string（内含本题文本解答[【Answer】5-1答案.md](./5-string/【Answer】5-1答案.md)）
