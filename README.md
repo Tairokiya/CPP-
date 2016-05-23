@@ -1,6 +1,10 @@
 # CPP程序设计作业
 
 
+国际软件学院
+2015302580244
+陈俊达
+mike307@163.com
 
 
 
@@ -45,6 +49,7 @@ Put the class definition in a header file( such as `Triangle.h`), and implement 
 ---
 
 ####THE SECOND ASSIGNMENT  
+  #####(1)Display in Binary
 **(1)** Write a function `void displayInBinary(void *data,int len) `what will display the binary sequence of a given variable. For example, `char c='a', displayInBinary(&c,sizeof(c))` will output`0110 0001`, and `short n=257,displayInBinary(&n,sizeof(n)) ` will output `0000 0001 0000 0001` , and `float f=1.0f, displayInBinary(&f,sizeof(f))`  will output `0011 1111 1000 0000 0000 0000 0000 0000`.
 
    Now, please investigate the following function:
@@ -63,6 +68,7 @@ void binaryOut(char c){
 ```
     You can implement displayInBinary() by employing binaryOut().
 
+  #####(2)Virtual Function
 **(2)** Virtual function is a important concept that will be involed in final examination. Investigate the following program, then answer some questions:
 
 ```C++
@@ -124,12 +130,14 @@ int main(int argc, char *argv[]){
 ---
 
 #### THE THIRD ASSIGNMENT 
+  #####(1)max
 
 (1) Write a function whose prototype is:
 
 `   int max(int a,int b,int c);`
    It will pick out the maximum value of three parameters. Place this function in the namespacemynamespace, and call it in main() function in the form `mynamespace::max(...)`.
 
+  #####(2)calculator
 (2)Define a class Calculator like this:
 
 ```C++
@@ -174,6 +182,7 @@ int main(int argc,char *argv[]){
 
    If we input "calculator div 1.1 2.2" in command line, we will see the result 0.5.
 
+  #####(3)leap year
 (3)Inspect this program：
 ``` C++
  #include < iostream >
@@ -192,6 +201,7 @@ int main( ){
 ```
    Please input the data from a file instead of from keyboard，and save the result into a file. You can use classifstream and ofstream，and judge the end of a file by calling feof()。
 
+  #####(4)Quit a for-loop
 （4）Inspect the fragment：
 ```C++
    for(i=0;i<100;i++)
@@ -210,6 +220,7 @@ int main( ){
 
 #### THE FOURTH ASSIGNMENT  
 
+  #####(1)find function
 (1)Write a **function template** whose prototype is:
 ```
 template<T> 
@@ -217,6 +228,7 @@ int find(T val,T *list,int size);
 ```
 This function template is used to find a particular value val in an array list whose size is size. When cuccessful, it returns the subscript i where `list[i]==val` , otherwise returns `-1`.  
 
+  #####(2)class with multiple template parameters 
 (2)Define a **class template** that employes more than one template parameters, and create some objects to test it.
 
 
@@ -227,6 +239,7 @@ This function template is used to find a particular value val in an array list w
 
 #### THE FIFTH ASSIGNMENT    
 
+  #####(1)String : constructor and destructor
 (1)Study this program, then answer questions:   
 
 ``` C++
