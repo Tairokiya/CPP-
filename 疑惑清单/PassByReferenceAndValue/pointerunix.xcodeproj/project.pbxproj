@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED5620441CFEE63100379B2C /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5620421CFEE63100379B2C /* Matrix.cpp */; };
-		ED7CECE91CE4E108008C3D85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED7CECE81CE4E108008C3D85 /* main.cpp */; };
+		EDAC68F41CED66CE00EC0331 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDAC68F31CED66CE00EC0331 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ED7CECE31CE4E108008C3D85 /* CopyFiles */ = {
+		EDAC68EE1CED66CD00EC0331 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		ED5620421CFEE63100379B2C /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
-		ED5620431CFEE63100379B2C /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
-		ED7CECE51CE4E108008C3D85 /* matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = matrix; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7CECE81CE4E108008C3D85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EDAC68F01CED66CE00EC0331 /* pointerunix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pointerunix; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAC68F31CED66CE00EC0331 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED7CECE21CE4E108008C3D85 /* Frameworks */ = {
+		EDAC68ED1CED66CD00EC0331 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,97 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED7CECDC1CE4E108008C3D85 = {
+		EDAC68E71CED66CD00EC0331 = {
 			isa = PBXGroup;
 			children = (
-				ED7CECE71CE4E108008C3D85 /* matrix */,
-				ED7CECE61CE4E108008C3D85 /* Products */,
+				EDAC68F21CED66CE00EC0331 /* pointerunix */,
+				EDAC68F11CED66CE00EC0331 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED7CECE61CE4E108008C3D85 /* Products */ = {
+		EDAC68F11CED66CE00EC0331 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED7CECE51CE4E108008C3D85 /* matrix */,
+				EDAC68F01CED66CE00EC0331 /* pointerunix */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED7CECE71CE4E108008C3D85 /* matrix */ = {
+		EDAC68F21CED66CE00EC0331 /* pointerunix */ = {
 			isa = PBXGroup;
 			children = (
-				ED7CECE81CE4E108008C3D85 /* main.cpp */,
-				ED5620431CFEE63100379B2C /* Matrix.h */,
-				ED5620421CFEE63100379B2C /* Matrix.cpp */,
+				EDAC68F31CED66CE00EC0331 /* main.cpp */,
 			);
-			path = matrix;
+			path = pointerunix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED7CECE41CE4E108008C3D85 /* matrix */ = {
+		EDAC68EF1CED66CD00EC0331 /* pointerunix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED7CECEC1CE4E108008C3D85 /* Build configuration list for PBXNativeTarget "matrix" */;
+			buildConfigurationList = EDAC68F71CED66CE00EC0331 /* Build configuration list for PBXNativeTarget "pointerunix" */;
 			buildPhases = (
-				ED7CECE11CE4E108008C3D85 /* Sources */,
-				ED7CECE21CE4E108008C3D85 /* Frameworks */,
-				ED7CECE31CE4E108008C3D85 /* CopyFiles */,
+				EDAC68EC1CED66CD00EC0331 /* Sources */,
+				EDAC68ED1CED66CD00EC0331 /* Frameworks */,
+				EDAC68EE1CED66CD00EC0331 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = matrix;
-			productName = matrix;
-			productReference = ED7CECE51CE4E108008C3D85 /* matrix */;
+			name = pointerunix;
+			productName = pointerunix;
+			productReference = EDAC68F01CED66CE00EC0331 /* pointerunix */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED7CECDD1CE4E108008C3D85 /* Project object */ = {
+		EDAC68E81CED66CD00EC0331 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "陈俊达";
 				TargetAttributes = {
-					ED7CECE41CE4E108008C3D85 = {
+					EDAC68EF1CED66CD00EC0331 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
 			};
-			buildConfigurationList = ED7CECE01CE4E108008C3D85 /* Build configuration list for PBXProject "matrix" */;
+			buildConfigurationList = EDAC68EB1CED66CD00EC0331 /* Build configuration list for PBXProject "pointerunix" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = ED7CECDC1CE4E108008C3D85;
-			productRefGroup = ED7CECE61CE4E108008C3D85 /* Products */;
+			mainGroup = EDAC68E71CED66CD00EC0331;
+			productRefGroup = EDAC68F11CED66CE00EC0331 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED7CECE41CE4E108008C3D85 /* matrix */,
+				EDAC68EF1CED66CD00EC0331 /* pointerunix */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED7CECE11CE4E108008C3D85 /* Sources */ = {
+		EDAC68EC1CED66CD00EC0331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5620441CFEE63100379B2C /* Matrix.cpp in Sources */,
-				ED7CECE91CE4E108008C3D85 /* main.cpp in Sources */,
+				EDAC68F41CED66CE00EC0331 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ED7CECEA1CE4E108008C3D85 /* Debug */ = {
+		EDAC68F51CED66CE00EC0331 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -174,7 +168,7 @@
 			};
 			name = Debug;
 		};
-		ED7CECEB1CE4E108008C3D85 /* Release */ = {
+		EDAC68F61CED66CE00EC0331 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,14 +204,14 @@
 			};
 			name = Release;
 		};
-		ED7CECED1CE4E108008C3D85 /* Debug */ = {
+		EDAC68F81CED66CE00EC0331 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		ED7CECEE1CE4E108008C3D85 /* Release */ = {
+		EDAC68F91CED66CE00EC0331 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -227,25 +221,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED7CECE01CE4E108008C3D85 /* Build configuration list for PBXProject "matrix" */ = {
+		EDAC68EB1CED66CD00EC0331 /* Build configuration list for PBXProject "pointerunix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7CECEA1CE4E108008C3D85 /* Debug */,
-				ED7CECEB1CE4E108008C3D85 /* Release */,
+				EDAC68F51CED66CE00EC0331 /* Debug */,
+				EDAC68F61CED66CE00EC0331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED7CECEC1CE4E108008C3D85 /* Build configuration list for PBXNativeTarget "matrix" */ = {
+		EDAC68F71CED66CE00EC0331 /* Build configuration list for PBXNativeTarget "pointerunix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7CECED1CE4E108008C3D85 /* Debug */,
-				ED7CECEE1CE4E108008C3D85 /* Release */,
+				EDAC68F81CED66CE00EC0331 /* Debug */,
+				EDAC68F91CED66CE00EC0331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ED7CECDD1CE4E108008C3D85 /* Project object */;
+	rootObject = EDAC68E81CED66CD00EC0331 /* Project object */;
 }

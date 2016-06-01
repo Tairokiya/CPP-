@@ -350,9 +350,11 @@ int main(){
    (d)In class String, str[0] is the reference count, whose maximum value is 255. Where is the content of Stringobject?  
    (e)How can we know that two String objects share the same memory space?  
 
-(2)Suppose we have a variable:
+##### (2)Suppose we have a variable:
+
 `double **Matrix;`  
 Write two functions:
+
 ```C++
 double **allocMatrix(int n);    
 void releaseMatrix(double **m);
