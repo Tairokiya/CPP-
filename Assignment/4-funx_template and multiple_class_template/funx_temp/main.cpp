@@ -30,7 +30,7 @@ public:
 };
 
 template <typename T>
-int find(T val,T *list,int size){
+int find(T val,T *list,int size){ //只能找到第一个出现的值并返回并不会遍历整个 list……
     for (int i = 0; i < size; i++)
         if (list[i] == val) return i;
     return -1;

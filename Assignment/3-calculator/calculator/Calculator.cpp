@@ -35,7 +35,7 @@ double Calculator::doOperation(){
             break;
     }
         std::cout << errorstr << std::endl;
-        return 1;
+        return NAN;
     }
     
     return res;
@@ -54,7 +54,7 @@ double Calculator::doOperationHidden(int &error){
     }else if (strncmp(operation, "div",3) == 0){
         if (opZero) {
             error = 2;
-            return NULL;
+            return 2;
         }
         return operand1 / operand2;
     }
