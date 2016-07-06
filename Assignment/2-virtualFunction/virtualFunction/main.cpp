@@ -11,7 +11,7 @@ public:
 
 class triangle:public shape{
 public:
-    void draw(){
+    virtual void draw(){
         cout << "  *  "<<endl;
         cout << " * * "<<endl;
         cout << "*****"<<endl<<endl;
@@ -20,14 +20,14 @@ public:
 
 class rectangle:public shape{
 public:
-    void draw(){
+    virtual void draw(){
         cout << "*******"<<endl;
         cout << "*     *"<<endl;
         cout << "*******"<<endl<<endl;
     }
 };
 
-class square:public rectangle{
+class square:public rectangle, public triangle{
 public:
     void draw(){
         cout << "****"<<endl;
@@ -59,22 +59,27 @@ public:
 int main(int argc, char *argv[]){
     
     //A.基类、子类实例的函数调用
-    shape c;  triangle t;  rectangle r;
-    c.draw(); t.draw();    r.draw();
+    shape c;  triangle t;  rectangle r; square s;
+    c.draw(); t.draw();    r.draw();    s.draw();
     
     //B.[指向本类子类实例]指针的函数调用
     shape *p;
     p=&c;   p->draw();
     p=&t;   p->draw();
     p=&r;   p->draw();
+//    p=&s;   p->draw();    //error: 不可继承
+    
+    triangle *pt;
+    pt=&s;  pt->draw();
     
     //C.[引用本类子类实例]引用的函数调用
     shape &rc=c;    rc.draw();
     shape &rt=t;    rt.draw();
     shape &rr=r;    rr.draw();
+//    shape &rs=s;    rs.draw();    //error: 不可继承
+    triangle &rs=s; rs.draw();
     
-    square s;
-    s.draw();
+    
 }
 
 
